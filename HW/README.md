@@ -12,16 +12,16 @@ This is a DIY project so in order to create it you would need the following comp
  So the main idea behind this project is that we make the outlet hardware using really cheap components.
  
  In order to get a overview on how the components communicate I've created this simple diagram 
- <center>![alt text](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/smart_outlet_hw_overview.jpg)</center>
+![](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/smart_outlet_hw_overview.jpg)
  
  Also I've made a simple and very graphic schematic that explains how the connections are made.
-<center> ![alt text](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/smart_outlet_design.jpg)</center>
+![](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/smart_outlet_design.jpg)
  
  
  The final result after we've put all compoments together should look like this.
- 
-  ![alt text](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/outlet_result_01.jpg)
- 
+
+ <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/outlet_result_01.jpg" width="600" height="500">                                                                                                                                 
+                                                                                                                                   
  
  ### Gateway hardware
  
