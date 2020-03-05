@@ -21,8 +21,33 @@ This is a DIY project so in order to create it you would need the following comp
  The final result after we've put all compoments together should look like this.
 
 <p align="center"><img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/outlet_result_01.jpg" width="600" height="500"></p>                                                                                                                                 
-                                                                                                                                   
- 
+### ATTINY85 outlet code
+
+```C
+#include <RCSwitch.h>
+RCSwitch mySwitch = RCSwitch();
+void setup() {
+  Serial.begin(9600);
+  Serial.println(“Setup RF Receiver”);
+  delay(1000);
+  mySwitch.enableReceive(2);  // Receiver on interrupt 0 => that is pin #2
+  pinMode(1, OUTPUT);
+}
+void loop() {
+  if (mySwitch.available()) {
+    int value = mySwitch.getReceivedValue();
+    Serial.println(“Value: ” + value);
+    if (value == 10000) {
+      digitalWrite(1, HIGH);
+    }
+    else if (value == 5000) {
+      digitalWrite(1, LOW);
+    }
+    mySwitch.resetAvailable();
+  }
+}   
+```
+
  ### Gateway hardware
  
  In order to connect, save and control multiple devices we need a gateway / server that will receive our input, process and convert it and then send it to the outlets/devices.
