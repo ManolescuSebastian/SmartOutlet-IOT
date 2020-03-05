@@ -21,7 +21,7 @@ This is a DIY project so in order to create it you would need the following comp
  The final result after we've put all compoments together should look like this.
 
 <p align="center"><img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/outlet_result_01.jpg" width="600" height="500"></p>                                                                                                                                 
-### ATTINY85 outlet code
+<b>ATTINY85 outlet code</b></br>
 
 ```C
 #include <RCSwitch.h>
