@@ -48,6 +48,8 @@ void loop() {
 }   
 ```
 
+You can also get the code from this HW repo <b>outlet_data_receiver.ino</b>
+
  ### Gateway hardware
  
  In order to connect, save and control multiple devices we need a gateway / server that will receive our input, process and convert it and then send it to the outlets/devices.
