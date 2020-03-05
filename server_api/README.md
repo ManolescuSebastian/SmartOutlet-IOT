@@ -19,3 +19,11 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 ├── rf_rpi_command.py  
 └── .gitignore
 ```
+
+### Endpoint
+
+ **/api/outlet** 
+ with parameters: **state = on** | **state = off**
+ 
+ e.g. http://192.168.1.39:5051/api/outlet?state=off
+ 
