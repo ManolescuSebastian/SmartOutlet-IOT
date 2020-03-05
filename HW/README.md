@@ -20,7 +20,7 @@ This is a DIY project so in order to create it you would need the following comp
  
  The final result after we've put all compoments together should look like this.
  
-  ![alt text](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/outlet_real_images.jpg)
+  ![alt text](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/HW/images/outlet_result.jpg)
  
  
  ### Gateway hardware
