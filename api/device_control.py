@@ -18,7 +18,7 @@ class ControlAPI(Resource):
     def get(self):
         if('state' in request.args):
             arg = request.args['state']
-            if(arg == "on"):
+            if(arg == 'true'):
                 rfCommand = RfRpiCommand
                 rfCommand.data_tx(5000)
 
@@ -27,7 +27,7 @@ class ControlAPI(Resource):
                     state = 'on',
                     code_sent = 5000)
                 return response
-            elif(arg == "off"):
+            elif(arg == 'false'):
                 rfCommand = RfRpiCommand
                 rfCommand.data_tx(10000)
 
