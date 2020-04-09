@@ -11,17 +11,17 @@ from rf_rpi_command import RfRpiCommand
 
 
 class ControlAPI(Resource):
-    
+
     def __init__(self):{
     }
-       
+
     def get(self):
         if('state' in request.args):
             arg = request.args['state']
             if(arg == "on"):
                 rfCommand = RfRpiCommand
                 rfCommand.data_tx(5000)
-                
+
                 return jsonify(
                     status = 200,
                     state = 'on',
@@ -30,7 +30,7 @@ class ControlAPI(Resource):
             elif(arg == "off"):
                 rfCommand = RfRpiCommand
                 rfCommand.data_tx(10000)
-                
+
                 return jsonify(
                     status = 200,
                     state = 'off',
@@ -41,5 +41,3 @@ class ControlAPI(Resource):
                     status = 400,
                     state = 'Error',
                     value = 0)
-        
-        
