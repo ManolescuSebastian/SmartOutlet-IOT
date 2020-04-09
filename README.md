@@ -6,6 +6,6 @@
 ### Hardware description ###
 
 
-### Server (API) description ###
+### API description ###
 
 ### Android Mobile Application ###
