@@ -25,5 +25,14 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
  **/api/outlet** 
  with parameters: **state = on** | **state = off**
  
+ Response:
+ ```json
+ {
+  "code_sent": 10000,
+  "state": "off",
+  "status": 200
+}
+```
+ 
  e.g. http://192.168.1.39:5051/api/outlet?state=off
  
