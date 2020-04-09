@@ -25,7 +25,7 @@ class ControlAPI(Resource):
                 return jsonify(
                     status = 200,
                     state = 'on',
-                    value = 5000)
+                    code_sent = 5000)
                 return response
             elif(arg == "off"):
                 rfCommand = RfRpiCommand
@@ -34,10 +34,10 @@ class ControlAPI(Resource):
                 return jsonify(
                     status = 200,
                     state = 'off',
-                    value = 10000)
+                    code_sent = 10000)
                 return response
             else:
                 return jsonify(
                     status = 400,
                     state = 'Error',
-                    value = 0)
+                    code_sent = 0)
