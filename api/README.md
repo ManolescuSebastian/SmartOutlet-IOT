@@ -26,7 +26,7 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
  with parameters: **state = on** | **state = off**
  
  Response:
- ```
+ ```json
  {
   "code_sent": 10000,
   "state": "off",
