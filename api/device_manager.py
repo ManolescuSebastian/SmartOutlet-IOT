@@ -54,13 +54,7 @@ class DeviceManager(Resource):
 #                    state = 'device off',
 #                    code_sent = value)
 
- #           else:
- #               return jsonify(
- #                   status = 400,
- #                   state = 'Error',
- #                   code_sent = 0)
-
-    #Add device
+  #Add device
     def post(self):
            if not request.data:
               abort(400, 'json required')
@@ -86,5 +80,3 @@ class DeviceManager(Resource):
            db.session.commit()
            return jsonify({'status':'succcess'})
 
-
-#    def save_device(name, type):
