@@ -44,18 +44,22 @@ class DeviceControl(Resource):
             if(state == 'true'):
                 rfCommand = RfRpiCommand
                 rfCommand.data_tx(on_value, 17)
-                return jsonify(
-                    status = True,
-                    state = 'device on',
-                    code_sent = on_value)
+                return {
+                   'status' : 'succcess',
+                   'data' : [{
+                   'status' : True,
+                   'state' : 'device on',
+                   'code_sent' : on_value}]}, 200
 
             elif(state == 'false'):
                 rfCommand = RfRpiCommand
                 rfCommand.data_tx(off_value, 17)
-                return jsonify(
-                    status = False,
-                    state = 'device off',
-                    code_sent = off_value)
+                return {
+                   'status' : 'succcess', 
+                   'data' :[{
+                   'status' : True,
+                   'state' : 'device on',
+                   'code_sent' : on_value}]}, 200
             else:
                 return {
                     'status' : False,
