@@ -11,6 +11,13 @@ class Gateway(Resource):
     }
 
     def get(self):
+           rfpin = request.args.get('rfpin', default= None, type = int)
            if('rfpin' in request.url):
-                return  {'status' : 'in progress...'}, 200
+           #todo save pin in database and set it to rf imlpementation
+                return  {'status':'success',
+                         'rf_pin' : rfpin}, 200
+
+           return {'status':'success',
+                   'message': 'Gateway available'}, 200
+
 

@@ -22,7 +22,7 @@ def setup():
 #API requests mapping
 #Control device
 api.add_resource(DeviceControl, '/control')
-# Manage devices | Control | Add | Edit | Delete
+# Manage devices | Add | Edit | Delete
 api.add_resource(DeviceManager, '/device')
 # Gateway information
 api.add_resource(Gateway, '/gateway')
