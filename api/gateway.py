@@ -11,21 +11,6 @@ class Gateway(Resource):
     }
 
     def get(self):
-           if('devices' in request.url):
-                device_list = [
-                    {
-                       'status' : 200,
-                       'device_name' : 'Lamp Outlet',
-                       'value_on' : 5000,
-                       'value_off' : 10000
-                    },
-                    {
-                       'status' : 200,
-                       'device_name' : 'Demo Outlet',
-                       'value_on' : 1000,
-                       'value_off' : 2000
-                     }
-                 ]
+           if('rfpin' in request.url):
+                return  {'status' : 'in progress...'}, 200
 
-                return jsonify(device_list)
-                return response
