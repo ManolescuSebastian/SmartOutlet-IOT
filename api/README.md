@@ -29,9 +29,9 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 
 ### Endpoints
 
- **[GET] /api/control** 
- with parameters: **state = true** | **state = false** </n>
- Request
+ **[GET] /api/control**    
+ with parameters: **state = true** | **state = false**        
+ Request    
 ```json
 {
       "type": "RF",
@@ -55,9 +55,9 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 }
 ```
 
- **[GET] /api/device** </n>
- Returns all available devices
-  Response
+ **[GET] /api/device**    
+ Returns all available devices       
+ Response.   
  ```json
 {
   "status": "success",
@@ -84,9 +84,8 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 }
 ```
 
- **[POST] /api/device** </n>
- Add device
- 
+ **[POST] /api/device**     
+ Add device     
  Request
 ```json
 {
@@ -109,3 +108,23 @@ Response
 }
 ```
 
+ **[PUT] /api/device**    
+ Edit device   
+ Request
+```json
+{
+	  "id" : 8, 
+	  "uuid" : 10000,
+   "device_name": "New Device Name",
+	  "type":"1"
+}
+```
+
+**[DELETE] api/device?id=**   
+**[DELETE] api/device?delete=all**   
+Response
+ ```json
+{
+  "status": "succcess"
+}
+```
