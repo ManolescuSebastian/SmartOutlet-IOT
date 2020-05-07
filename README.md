@@ -8,10 +8,10 @@
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_3.jpg" width="24%"></img>
     
 
-### Project Structure ###
+### API ###
 
-### Architecture ###
+### Hardware ###
 
-### Resources ###
+### License ###
 
 
