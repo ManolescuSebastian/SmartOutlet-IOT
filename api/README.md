@@ -113,10 +113,10 @@ Response
  Request
 ```json
 {
-	  "id" : 8, 
-	  "uuid" : 10000,
+   "id" : 8, 
+   "uuid" : 10000,
    "device_name": "New Device Name",
-	  "type":"1"
+   "type":"1"
 }
 ```
 
