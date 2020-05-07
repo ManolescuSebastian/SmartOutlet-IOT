@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/screen_background_color">
+
+        <TextView
+            android:id="@+id/topDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Swipe to select device type"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/left_arrow"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_left_arrow"
+            android:tint="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@+id/deviceTypeViewPager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deviceTypeViewPager" />
+
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:rotation="180"
+            android:src="@drawable/ic_left_arrow"
+            android:tint="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@+id/deviceTypeViewPager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deviceTypeViewPager" />
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/deviceTypeViewPager"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/name_til"
+            app:layout_constraintEnd_toStartOf="@+id/right_arrow"
+            app:layout_constraintStart_toEndOf="@+id/left_arrow"
+            app:layout_constraintTop_toBottomOf="@+id/topDescription" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/name_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deviceTypeViewPager">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/deviceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/device_name"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/deviceNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_name_error"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/uniqueIdentifier_til"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_til">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/uniqueIdentifier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/device_identifier"
+                android:inputType="number"
+                android:maxLength="7"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/uniqueIdentifierError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/device_identifier_error"
+                android:textColor="#FF0000"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/device_identifier_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/ic_info"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/device_off"
+            android:text="In the field above, input your device unique code found on the back of your outlet"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uniqueIdentifier_til" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveDevice"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:text="Save device"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/device_identifier_description"
+            app:strokeWidth="2dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

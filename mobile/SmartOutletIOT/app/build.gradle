@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.tekydevelop.android.smartoutletiot"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "SERVER_BASE_URL", "\"http://192.168.1.9:5050\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //app dependencies
+    implementation appDependency.appCompat
+    implementation appDependency.kotlin
+    implementation appDependency.coreKtx
+    implementation appDependency.constraintlayout
+    implementation appDependency.androidMaterial
+    implementation appDependency.koin
+    implementation appDependency.koinViewModel
+    implementation appDependency.lifecycleExtension
+    implementation appDependency.lifecycleViewmodel
+    implementation appDependency.glide
+    implementation appDependency.glideCompiler
+    implementation appDependency.rxKotlin
+    implementation appDependency.rxAndroid
+    implementation appDependency.koinCore
+    implementation appDependency.swipeRefresh
+
+    annotationProcessor appDependency.glideCompiler
+    kapt appDependency.glideCompiler
+
+    //domain dependencies
+    implementation domainDependency.javaxAnnotation
+    implementation domainDependency.javaxInject
+    implementation domainDependency.gson
+
+    //data dependencies
+    implementation dataDependency.okHttp
+    implementation dataDependency.okHttpLogger
+    implementation dataDependency.androidAnnotations
+    implementation dataDependency.retrofit
+    implementation dataDependency.retrofitGsonConverter
+    implementation dataDependency.retrofitScalarsConverter
+    implementation dataDependency.retrofitAdapter
+    implementation dataDependency.intercepor
+
+    //test dependencies
+    testImplementation testDependency.junit
+    testImplementation testDependency.kotlintest
+    testImplementation testDependency.mockito
+
+}
