@@ -11,28 +11,101 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 ### Project structure
 
 ```bash
+├── models
+│   ├── device.py
 ├── templates
 │   ├── index.html
+│   ├── gateway_setup.html
 │
-├── app_main.py  
-├── control_api.py 
+├── app.py  
+├── config.py  
+├── device_control.py
+├── device_manager.py
+├── gateway.py
 ├── rf_rpi_command.py  
+├── run.py
 └── .gitignore
 ```
 
-### Endpoint
+### Endpoints
 
- **/api/outlet** 
- with parameters: **state = on** | **state = off**
- 
- Response:
- ```json
- {
-  "code_sent": 10000,
-  "state": "off",
-  "status": 200
+ **[GET] /api/control** 
+ with parameters: **state = true** | **state = false**
+ Request
+```json
+{
+      "type": "RF",
+      "id": 11,
+      "name": "Device 5",
+      "uuid": 10000
 }
 ```
  
- e.g. http://192.168.1.39:5051/api/outlet?state=off
+ Response
+ ```json
+{
+  "status": "succcess",
+  "data": [
+    {
+      "status": true,
+      "state": "device on",
+      "code_sent": 10000
+    }
+  ]
+}
+```
+
+ **[GET] /api/device** 
+ Returns all available devices
+  Response
+ ```json
+{
+  "status": "success",
+  "data": [
+    {
+      "uuid": 10002,
+      "id": 2,
+      "type": 0,
+      "name": "Room device"
+    },
+    {
+      "uuid": 10004,
+      "id": 3,
+      "type": 3,
+      "name": "Other Room device"
+    },
+    {
+      "uuid": 10006,
+      "id": 4,
+      "type": 2,
+      "name": "Any room device"
+    }
+  ]
+}
+```
+
+ **[POST] /api/device** 
+ Add device
  
+ Request
+```json
+{
+	  "uuid" : 10008,
+   "name": "Any room",
+	  "type":"0"
+}
+```
+
+Response
+ ```json
+{
+  "status": "succcess",
+  "data": {
+    "name": "Any room",
+    "id": 5,
+    "uuid": 10008,
+    "type": 0
+  }
+}
+```
+
