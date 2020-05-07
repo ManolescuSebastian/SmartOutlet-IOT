@@ -30,7 +30,7 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 ### Endpoints
 
  **[GET] /api/control** 
- with parameters: **state = true** | **state = false**
+ with parameters: **state = true** | **state = false** </n>
  Request
 ```json
 {
@@ -55,7 +55,7 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 }
 ```
 
- **[GET] /api/device** 
+ **[GET] /api/device** </n>
  Returns all available devices
   Response
  ```json
@@ -84,15 +84,15 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 }
 ```
 
- **[POST] /api/device** 
+ **[POST] /api/device** </n>
  Add device
  
  Request
 ```json
 {
-	  "uuid" : 10008,
+   "uuid" : 10008,
    "name": "Any room",
-	  "type":"0"
+   "type":"0"
 }
 ```
 
