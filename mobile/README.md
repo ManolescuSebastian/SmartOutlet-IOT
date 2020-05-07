@@ -1,2 +1,17 @@
 # SmartOutlet-IOT
-This repository contains the implementation and information on how a smart home system can be implemented (from my point of view)
+
+### Mobile UI ###     
+
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_1.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_2.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_4.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_3.jpg" width="24%"></img>
+    
+
+### Project Structure ###
+
+### Architecture ###
+
+### Resources ###
+
+
