@@ -52,7 +52,7 @@ class AddDeviceActivity : AppCompatActivity() {
     }
 
     private fun onDataInit() {
-        viewModel.validData.observe(this, Observer {
+        viewModel.deviceData.observe(this, Observer {
             if (it) {
                 val returnIntent = Intent()
                 returnIntent.putExtra("result", 1001)

@@ -42,8 +42,8 @@ class DeviceBottomSheetFragment : BottomSheetDialogFragment() {
     }
 
     private fun initData() {
-        viewModel.validData.observe(viewLifecycleOwner, Observer {
-            if(it == false){
+        viewModel.deviceData.observe(viewLifecycleOwner, Observer {
+            if (it == null) {
                 return@Observer
             }
             listener?.updateList()

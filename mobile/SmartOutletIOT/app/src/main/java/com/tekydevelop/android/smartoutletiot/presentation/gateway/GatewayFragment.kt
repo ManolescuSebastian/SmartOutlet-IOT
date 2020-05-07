@@ -36,7 +36,7 @@ class GatewayFragment : Fragment() {
     }
 
     private fun onInit() {
-        viewModel.success.observe(viewLifecycleOwner, Observer {
+        viewModel.gatewayData.observe(viewLifecycleOwner, Observer {
             gatewayInfo.text = resources.getString(R.string.gateway_connection_success)
             gatewayIcon.setColorFilter(ContextCompat.getColor(context!!, R.color.activated))
         })

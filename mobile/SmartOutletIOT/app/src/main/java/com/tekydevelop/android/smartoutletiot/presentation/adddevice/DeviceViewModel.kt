@@ -2,6 +2,7 @@ package com.tekydevelop.android.smartoutletiot.presentation.adddevice
 
 import androidx.lifecycle.MutableLiveData
 import com.tekydevelop.android.smartoutletiot.common.BaseViewModel
+import com.tekydevelop.android.smartoutletiot.data.model.Response
 import com.tekydevelop.android.smartoutletiot.domain.model.DeviceData
 import com.tekydevelop.android.smartoutletiot.domain.usecase.DeviceCases
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -10,7 +11,7 @@ import io.reactivex.schedulers.Schedulers
 
 class DeviceViewModel(private val deviceCases: DeviceCases) : BaseViewModel() {
 
-    var validData = MutableLiveData<Boolean>()
+    var deviceData = MutableLiveData<Response>()
     var error = MutableLiveData<Throwable>()
 
     fun saveDevice(device: DeviceData) {
@@ -18,7 +19,7 @@ class DeviceViewModel(private val deviceCases: DeviceCases) : BaseViewModel() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                validData.postValue(true)
+                deviceData.postValue(it)
             }, {
                 error.postValue(it)
             })
@@ -29,7 +30,7 @@ class DeviceViewModel(private val deviceCases: DeviceCases) : BaseViewModel() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                validData.postValue(true)
+                deviceData.postValue(it)
             }, {
                 error.postValue(it)
             })
@@ -40,7 +41,7 @@ class DeviceViewModel(private val deviceCases: DeviceCases) : BaseViewModel() {
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                validData.postValue(true)
+                deviceData.postValue(it)
             }, {
                 error.postValue(it)
             })
