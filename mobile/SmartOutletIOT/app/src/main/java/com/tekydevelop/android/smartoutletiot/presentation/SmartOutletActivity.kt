@@ -107,7 +107,7 @@ class SmartOutletActivity : AppCompatActivity(),
     /**
      * Device Add / Edit
      */
-    override fun selectActionActivityActivity() {
+    override fun selectActivityAction() {
         startActivityForResult(Intent(this, AddDeviceActivity::class.java), ADD_DEVICE)
     }
 

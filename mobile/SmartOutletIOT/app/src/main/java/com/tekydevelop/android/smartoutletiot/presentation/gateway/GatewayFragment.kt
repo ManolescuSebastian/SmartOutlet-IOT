@@ -11,7 +11,6 @@ import com.tekydevelop.android.smartoutletiot.R
 import kotlinx.android.synthetic.main.gateway_layout.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
-
 class GatewayFragment : Fragment() {
 
     companion object {

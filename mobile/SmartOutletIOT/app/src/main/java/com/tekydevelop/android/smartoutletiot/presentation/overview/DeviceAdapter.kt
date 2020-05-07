@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tekydevelop.android.smartoutletiot.R
 import com.tekydevelop.android.smartoutletiot.domain.model.DeviceData
 
-
 class DeviceAdapter(
     private val onItemSelectListener: (View, DeviceData) -> Unit,
     private val onItemLongPressListener: (View, DeviceData) -> Unit

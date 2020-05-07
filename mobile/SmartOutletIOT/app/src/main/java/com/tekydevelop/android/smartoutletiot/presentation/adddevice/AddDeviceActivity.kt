@@ -13,7 +13,6 @@ import com.tekydevelop.android.smartoutletiot.domain.model.DeviceData
 import kotlinx.android.synthetic.main.add_device_layout.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
-
 class AddDeviceActivity : AppCompatActivity() {
 
     private val viewModel: DeviceViewModel by viewModel()

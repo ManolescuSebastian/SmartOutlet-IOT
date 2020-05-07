@@ -5,9 +5,7 @@ import retrofit2.HttpException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
-
 fun <T : DomainMappable<R>, R> Single<T>.mapToDomain(): Single<R> = this.map { it.asDomain() }
-
 
 fun <T> Single<T>.mapNetworkErrors(): Single<T> =
     this.onErrorResumeNext { error ->

@@ -97,7 +97,7 @@ class OverviewFragment : Fragment() {
 
     private fun onEvents() {
         addDevice.setOnClickListener {
-            listener?.selectActionActivityActivity()
+            listener?.selectActivityAction()
         }
 
         swipeRefresh.setOnRefreshListener {

@@ -10,7 +10,6 @@ import io.reactivex.Single
 
 class DeviceRepositoryImpl(private val deviceService: DeviceService) : DeviceRepository {
 
-
     override fun availableDevices(): Single<List<DeviceData>> {
         return deviceService.availableDevices()
             .map { it.asDomain() }
