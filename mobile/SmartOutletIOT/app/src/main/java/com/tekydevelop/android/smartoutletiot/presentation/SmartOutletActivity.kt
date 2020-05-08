@@ -17,9 +17,8 @@ import com.tekydevelop.android.smartoutletiot.presentation.navigation.Screen
 import com.tekydevelop.android.smartoutletiot.presentation.overview.OverviewFragment
 import com.tekydevelop.android.smartoutletiot.presentation.overview.bottom_sheet.DeviceBottomSheetFragment
 import com.tekydevelop.android.smartoutletiot.presentation.overview.bottom_sheet.OnBottomSheetActions
-
-private const val ADD_DEVICE = 10001
-private const val EDIT_DEVICE = 10002
+import com.tekydevelop.android.smartoutletiot.utils.Constants.ADD_DEVICE
+import com.tekydevelop.android.smartoutletiot.utils.Constants.EDIT_DEVICE
 
 class SmartOutletActivity : AppCompatActivity(),
     OnNavigationListener, OnBottomSheetActions {

@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.viewpager2.widget.ViewPager2
 import com.tekydevelop.android.smartoutletiot.R
 import com.tekydevelop.android.smartoutletiot.domain.model.DeviceData
+import com.tekydevelop.android.smartoutletiot.utils.Constants.ADD_DEVICE
 import kotlinx.android.synthetic.main.add_device_layout.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -55,7 +56,7 @@ class AddDeviceActivity : AppCompatActivity() {
         viewModel.deviceData.observe(this, Observer {
             if (it != null) {
                 val returnIntent = Intent()
-                returnIntent.putExtra("result", 1001)
+                returnIntent.putExtra("result", ADD_DEVICE)
                 setResult(Activity.RESULT_OK, returnIntent)
                 finish()
             }
