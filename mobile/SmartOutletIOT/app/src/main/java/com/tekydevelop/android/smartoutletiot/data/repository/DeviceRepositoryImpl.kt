@@ -2,7 +2,7 @@ package com.tekydevelop.android.smartoutletiot.data.repository
 
 import com.tekydevelop.android.smartoutletiot.data.mapper.mapNetworkErrors
 import com.tekydevelop.android.smartoutletiot.data.model.DeviceRequest
-import com.tekydevelop.android.smartoutletiot.data.model.Response
+import com.tekydevelop.android.smartoutletiot.data.model.StatusResponse
 import com.tekydevelop.android.smartoutletiot.data.service.DeviceService
 import com.tekydevelop.android.smartoutletiot.domain.model.DeviceData
 import com.tekydevelop.android.smartoutletiot.domain.repository.DeviceRepository
@@ -16,17 +16,17 @@ class DeviceRepositoryImpl(private val deviceService: DeviceService) : DeviceRep
             .mapNetworkErrors()
     }
 
-    override fun addCase(id: Int, uuid: Int, name: String, type: Int): Single<Response> {
+    override fun addCase(id: Int, uuid: Int, name: String, type: Int): Single<StatusResponse> {
         return deviceService.addDevice(DeviceRequest(id, uuid, name, type))
             .mapNetworkErrors()
     }
 
-    override fun editCase(id: Int, uuid: Int, name: String, type: Int): Single<Response> {
+    override fun editCase(id: Int, uuid: Int, name: String, type: Int): Single<StatusResponse> {
         return deviceService.editDevice(DeviceRequest(id, uuid, name, type))
             .mapNetworkErrors()
     }
 
-    override fun deleteCase(id: Int): Single<Response> {
+    override fun deleteCase(id: Int): Single<StatusResponse> {
         return deviceService.deleteDevice(id)
             .mapNetworkErrors()
     }

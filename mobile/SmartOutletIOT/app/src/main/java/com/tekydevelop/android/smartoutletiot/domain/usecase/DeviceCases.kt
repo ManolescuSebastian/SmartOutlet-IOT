@@ -1,6 +1,6 @@
 package com.tekydevelop.android.smartoutletiot.domain.usecase
 
-import com.tekydevelop.android.smartoutletiot.data.model.Response
+import com.tekydevelop.android.smartoutletiot.data.model.StatusResponse
 import com.tekydevelop.android.smartoutletiot.domain.model.DeviceData
 import com.tekydevelop.android.smartoutletiot.domain.repository.DeviceRepository
 import io.reactivex.Single
@@ -11,15 +11,15 @@ class DeviceCases(private val deviceRepository: DeviceRepository) {
         return deviceRepository.availableDevices()
     }
 
-    fun executeAddCase(device: DeviceData): Single<Response> {
+    fun executeAddCase(device: DeviceData): Single<StatusResponse> {
         return deviceRepository.addCase(device.id, device.uuid, device.name, device.type)
     }
 
-    fun executeEditCase(device: DeviceData): Single<Response> {
+    fun executeEditCase(device: DeviceData): Single<StatusResponse> {
         return deviceRepository.editCase(device.id, device.uuid, device.name, device.type)
     }
 
-    fun executeDeleteCase(id: Int): Single<Response> {
+    fun executeDeleteCase(id: Int): Single<StatusResponse> {
         return deviceRepository.deleteCase(id)
     }
 

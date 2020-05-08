@@ -1,6 +1,6 @@
 package com.tekydevelop.android.smartoutletiot.domain.repository
 
-import com.tekydevelop.android.smartoutletiot.data.model.Response
+import com.tekydevelop.android.smartoutletiot.data.model.StatusResponse
 import com.tekydevelop.android.smartoutletiot.domain.model.DeviceData
 import io.reactivex.Single
 
@@ -14,16 +14,16 @@ interface DeviceRepository {
     /**
      * Add new device
      */
-    fun addCase(id: Int, uuid: Int, name: String, type: Int): Single<Response>
+    fun addCase(id: Int, uuid: Int, name: String, type: Int): Single<StatusResponse>
 
     /**
      * Edit selected device
      */
-    fun editCase(id: Int, uuid: Int, name: String, type: Int): Single<Response>
+    fun editCase(id: Int, uuid: Int, name: String, type: Int): Single<StatusResponse>
 
     /**
      * Delete device by id
      */
-    fun deleteCase(id: Int): Single<Response>
+    fun deleteCase(id: Int): Single<StatusResponse>
 
 }

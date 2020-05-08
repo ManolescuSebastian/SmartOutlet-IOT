@@ -1,14 +1,14 @@
 package com.tekydevelop.android.smartoutletiot.domain.repository
 
 import com.tekydevelop.android.smartoutletiot.data.model.GatewayPinResponse
-import com.tekydevelop.android.smartoutletiot.data.model.Response
+import com.tekydevelop.android.smartoutletiot.data.model.StatusResponse
 import io.reactivex.Single
 
 interface GatewayRepository {
     /**
      * Check if gateway connection is established
      */
-    fun checkGatewayStatus(): Single<Response>
+    fun checkGatewayStatus(): Single<StatusResponse>
 
     /**
      * Change RF transmitter gateway pin
