@@ -1,0 +1,39 @@
+<resources>
+    <!-- Generic -->
+    <string name="app_name">SmartOutletIOT</string>
+    <string name="overview_title">Overview</string>
+    <string name="gateway_title">Gateway</string>
+
+    <!-- Add device screen -->
+    <string name="device_name">Device Name</string>
+    <string name="device_name_error">Please enter device name</string>
+    <string name="device_identifier">Device identifier</string>
+    <string name="device_identifier_error">Please add correct identifier from device label</string>
+    <string name="save_device">Save Device</string>
+    <string name="add_device">Add device</string>
+    <string name="edit_device">Edit device</string>
+    <string name="update_device">Update Device</string>
+
+    <!-- Overview -->
+
+    <!-- Gateway -->
+    <string name="gateway">Gateway</string>
+    <string name="gateway_address">Gateway IP Address</string>
+    <string name="gateway_address_error">Invalid address</string>
+    <string name="connect">Connect</string>
+    <string name="gateway_info">Please input the gateway ADDRESS and PORT</string>
+    <string name="update_device_description">Update device with valida data</string>
+    <string name="gateway_connection_success">Gateway connection success</string>
+    <string name="gateway_connection_failure">Gateway connection failed</string>
+    <string name="gateway_status_description">Verify gateway connection status</string>
+
+    <!-- Delete device confirm dialog -->
+    <string name="confirm">Confirm</string>
+    <string name="confirm_message">Do you want to delete this device?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_devices">No devices found</string>
+    <string name="gateway_not_found">Gateway not found</string>
+    <string name="gateway_setup">Gateway Setup</string>
+
+</resources>
