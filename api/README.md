@@ -10,7 +10,13 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 
 ### Setup    
 Install required libraries and dependencies     
-pip3 install -r requirements.txt      
+pip3 install -r requirements.txt     
+
+pip3 install flask  
+pip3 install flask_restful   
+pip3 install flask_marshmallow   
+pip3 install marshmallow-sqlalchemy   
+pip3 install rpi_rf   
 
 ### Project structure
 

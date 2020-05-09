@@ -54,3 +54,9 @@ You can also get the code from this hardware repo <b>outlet_data_receiver.ino</b
  
  In order to connect, save and control multiple devices we need a gateway / server that will receive our input, process and convert it and then send it to the outlets/devices.
  For this purpose we used a <b>Raspberry Pi 3B+</b> (we can use any other raspberry Pi device versions)
+ 
+ Helpful resources:
+ [ Wiring H34A / H3V3F / H3V4F 315/433 MHz RF Radio TX/RX]( https://www.14core.com/wiring-h34a-h3v3f-h3v4f-315-433-mhz-wireless-rf-tx-rx/)
+
+
+ 

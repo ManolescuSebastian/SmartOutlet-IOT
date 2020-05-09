@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#223550</color>
+    <color name="colorPrimaryDark">#223550</color>
+    <color name="colorAccent">#BB413E</color>
+    
+    <color name="device_off">#223550</color>
+    <color name="device_on">#4CAC5B</color>
+    <color name="device_item_border">#9C9D9E</color>
+    <color name="separator">#7B7C7E</color>
+
+    <color name="screen_background_color">#F9F9F9</color>
+
+    <color name="bg_gradient_top">#F8F8F8</color>
+    <color name="bg_gradient_bottom">#F9F9F9</color>
+
+    <color name="white">#FFF</color>
+
+    <color name="activated">#4CAC5B</color>
+    <color name="deactivated">#BB413E</color>
+
+</resources>

@@ -1,0 +1,71 @@
+ext {
+
+    //libraries
+    kotlinVersion = '1.3.50'
+    rxKotlinVersion = '2.1.0'
+    rxAndroidVersion = '2.0.2'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    gsonVersion = '2.8.5'
+    okHttpVersion = '4.4.0'
+    androidAnnotationsVersion = '1.1.0'
+    retrofitVersion = '2.7.1'
+    loggingInterceptor = '4.4.0'
+    androidxVersion = '1.1.0'
+    constraintlayoutVersion = '1.1.3'
+    androidMaterialVersion = '1.1.0'
+    glideVersion = '4.11.0'
+    koinVersion = '2.1.5'
+    swipeRefresh = '1.0.0'
+
+    //Testing
+    jUnitVersion = '4.13'
+    kotlintestVersion = '2.0.7'
+    mockitoVersion = '2.2.0'
+    lifecycleExtension = '2.2.0'
+    lifecycleViewmodel = '2.2.0'
+
+    appDependency = [
+            appCompat         : "androidx.appcompat:appcompat:${androidxVersion}",
+            kotlin            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            coreKtx           : "androidx.core:core-ktx:${androidxVersion}",
+            constraintlayout  : "androidx.constraintlayout:constraintlayout:${constraintlayoutVersion}",
+            androidMaterial   : "com.google.android.material:material:${androidMaterialVersion}",
+            koin              : "org.koin:koin-android:${koinVersion}",
+            koinViewModel     : "org.koin:koin-android-viewmodel:${koinVersion}",
+            koinViewModelX    : "org.koin:koin-androidx-viewmodel:${koinVersion}",
+            lifecycleExtension: "androidx.lifecycle:lifecycle-extensions:${lifecycleExtension}",
+            lifecycleViewmodel: "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifecycleViewmodel}",
+            glide             : "com.github.bumptech.glide:glide:${glideVersion}",
+            glideCompiler     : "com.github.bumptech.glide:compiler:${glideVersion}",
+            rxKotlin          : "io.reactivex.rxjava2:rxkotlin:${rxKotlinVersion}",
+            rxAndroid         : "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+            koinCore          : "org.koin:koin-core:${koinVersion}",
+            swipeRefresh      : "androidx.swiperefreshlayout:swiperefreshlayout:${swipeRefresh}"
+
+    ]
+
+    domainDependency = [
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject    : "javax.inject:javax.inject:${javaxInjectVersion}",
+            gson           : "com.google.code.gson:gson:${gsonVersion}"
+    ]
+
+    dataDependency = [
+            okHttp                  : "com.squareup.okhttp3:okhttp:${okHttpVersion}",
+            okHttpLogger            : "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+            androidAnnotations      : "androidx.annotation:annotation:${androidAnnotationsVersion}",
+            retrofit                : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            retrofitGsonConverter   : "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            retrofitScalarsConverter: "com.squareup.retrofit2:converter-scalars:${retrofitVersion}",
+            retrofitAdapter         : "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}",
+            intercepor              : "com.squareup.okhttp3:logging-interceptor:${loggingInterceptor}"
+    ]
+
+    testDependency = [
+            junit     : "junit:junit:${jUnitVersion}",
+            mockito   : "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoVersion}",
+            kotlintest: "io.kotlintest:kotlintest:${kotlintestVersion}"
+    ]
+
+}
