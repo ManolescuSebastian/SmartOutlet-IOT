@@ -7,7 +7,7 @@ import com.tekydevelop.android.smartoutletiot.domain.model.DeviceData
 data class DeviceDataResponse(
     val status: String,
     @SerializedName("data") val data: List<DeviceResponse>
-) : DomainMappableList<DeviceData> {
+) : DomainMappableList<DeviceData>{
     override fun asDomain(): List<DeviceData> {
         val deviceList: MutableList<DeviceData> = mutableListOf()
         data.forEach {
