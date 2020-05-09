@@ -7,8 +7,8 @@ GPIO.setmode(GPIO.BCM)
 
 class RfRpiCommand():
 
-    def data_tx(code : int, pin: int):
-        rfdevice = RFDevice(17)
+    def data_tx(code : int, rfpin: int):
+        rfdevice = RFDevice(rfpin)
         rfdevice.enable_tx()
         rfdevice.tx_repeat = 10
         print('sent code:' + str(code))
