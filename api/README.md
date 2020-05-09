@@ -8,6 +8,10 @@ For that as I mentioned in the Hardware section [here](https://github.com/Manole
 
 In this project we used as FLASK (Flask is a lightweight WSGI web application framework), more info [here](https://palletsprojects.com/p/flask/)
 
+### Setup    
+Install required libraries and dependencies     
+pip3 install -r requirements.txt      
+
 ### Project structure
 
 ```bash
