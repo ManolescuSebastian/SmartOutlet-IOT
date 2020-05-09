@@ -5,7 +5,7 @@ from flask import Blueprint
 #Route
 from device_manager import DeviceManager
 from device_control import DeviceControl
-from gateway import Gateway
+from gateway_manager import GatewayManager
 
 api_bp = Blueprint('api', __name__)
 api = Api(api_bp)
@@ -25,4 +25,4 @@ api.add_resource(DeviceControl, '/control')
 # Manage devices | Add | Edit | Delete
 api.add_resource(DeviceManager, '/device')
 # Gateway information
-api.add_resource(Gateway, '/gateway')
+api.add_resource(GatewayManager, '/gateway')

@@ -5,14 +5,19 @@ from flask_restful import Resource, Api
 from flask import Response
 from typing import List
 
+#db
+from flask_marshmallow import Marshmallow
+from flask_sqlalchemy import SQLAlchemy
+
+from models.gateway import db, Gateway, GatewaySchema
+
+gateway_schema = GatewaySchema()
+
 #RF data
 from rpi_rf import RFDevice
 from rf_rpi_command import RfRpiCommand
 
 class DeviceControl(Resource):
-
-    #TODO allow  set pin from gateawy endpoint
-    rf_pin = 17
 
     def __init__(self):{
     }
@@ -36,6 +41,14 @@ class DeviceControl(Resource):
 
             print(off_value)
 
+            gpin = Gateway.query.first()
+            if gpin is not None:
+               rf_pin = gpin.rf_pin
+            else:
+               rf_pin = 17 #default pin
+
+            print('Gateway RF_pin: ', rf_pin)
+
             state = request.args.get('state', default= None, type = str)
 
             if 'state' not in request.args:
@@ -43,7 +56,7 @@ class DeviceControl(Resource):
 
             if(state == 'true'):
                 rfCommand = RfRpiCommand
-                rfCommand.data_tx(on_value, 17)
+                rfCommand.data_tx(on_value, rf_pin)
                 return {
                    'status' : 'succcess',
                    'data' : [{
@@ -53,9 +66,9 @@ class DeviceControl(Resource):
 
             elif(state == 'false'):
                 rfCommand = RfRpiCommand
-                rfCommand.data_tx(off_value, 17)
+                rfCommand.data_tx(off_value, rf_pin)
                 return {
-                   'status' : 'succcess', 
+                   'status' : 'succcess',
                    'data' :[{
                    'status' : True,
                    'state' : 'device on',

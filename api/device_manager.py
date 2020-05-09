@@ -70,7 +70,7 @@ class DeviceManager(Resource):
            if(delete == 'all'):
               db.session.query(Device).delete()
               db.session.commit()
-              return {'message' : 'All devices deleted'}, 400
+              return {'message' : 'All devices deleted'}, 200
 
            device_id = request.args.get('id', default= None, type = str)
            if 'id' not in request.args:
