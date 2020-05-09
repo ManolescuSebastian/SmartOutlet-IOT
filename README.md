@@ -2,22 +2,27 @@
 
 
 
-### Demo
-
+### Demo 
+------
 Video file.   
-
+     
+    
+    
 ### Mobile UI ###     
-
+------
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_1.jpg" width="24%"></img>
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_2.jpg" width="24%"></img>
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_4.jpg" width="24%"></img>
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_3.jpg" width="24%"></img>
     
-
+     
+     
+     
 ### API ###
+------
 In this project we used as FLASK (Flask is a lightweight WSGI web application framework), more info [here](https://palletsprojects.com/p/flask/)
-
-#### Project structure
+     
+##### Project structure
 
 ```bash
 ├── models
@@ -38,9 +43,11 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 
 #### start server command    
 sudo python3 run.py
-
+    
+    
+    
 ### Hardware ###
-
+------
 This is a DIY project so in order to create it you would need the following components.
  * Outlet case (for this project I've used a Mechanical Outlet Timer)
  * Phone charger (I've used an IPhone charger), open the container and get the circuit
@@ -56,7 +63,8 @@ This is a DIY project so in order to create it you would need the following comp
 
 More details in the <b> hardware </b> module
 
-    
+License
+------
          
 
     Licensed under the Apache License, Version 2.0 (the "License");
