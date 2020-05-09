@@ -2,14 +2,13 @@
 
 
 
-### Demo 
-------
+## Demo 
 Video file.   
      
     
     
-### Mobile UI ###     
-------
+## Mobile UI    
+
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_1.jpg" width="24%"></img>
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_2.jpg" width="24%"></img>
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/develop_mobile/mobile/SmartOutletIOT/app%20screenshots/hm_sc_4.jpg" width="24%"></img>
@@ -18,8 +17,8 @@ Video file.
      
      
      
-### API ###
-------
+## API
+
 In this project we used as FLASK (Flask is a lightweight WSGI web application framework), more info [here](https://palletsprojects.com/p/flask/)
      
 ##### Project structure
@@ -46,8 +45,8 @@ sudo python3 run.py
     
     
     
-### Hardware ###
-------
+## Hardware
+
 This is a DIY project so in order to create it you would need the following components.
  * Outlet case (for this project I've used a Mechanical Outlet Timer)
  * Phone charger (I've used an IPhone charger), open the container and get the circuit
