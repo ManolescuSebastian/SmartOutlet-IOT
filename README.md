@@ -58,10 +58,9 @@ This is a DIY project so in order to create it you would need the following comp
  
  The main idea behind this project is that we make the outlet hardware using really cheap components.
 
- Also I've made a simple and very graphic schematic that explains how the connections are made.    
-<p align="center">
- <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/smart_outlet_design.jpg" width="70%"/>
-</p>
+ Also I've made a simple and very graphic schematic that explains how the connections are made.     
+<img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/smart_outlet_hw_overview.jpg" width="40%"></img>
+<img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/smart_outlet_design.jpg" width="50%">
 
 More details in the <b> hardware </b> module
 
