@@ -9,7 +9,7 @@ This is a DIY project so in order to create it you would need the following comp
  * Receiver H3V4F Module (433 MHz) <b>OR</b> LR45A Receiver Module (433 MHz)
  * ATTINY85 USB Development Board
  
- So the main idea behind this project is that we make the outlet hardware using really cheap components.
+ The main idea behind this project is that we make the outlet hardware using really cheap components.
  
  In order to get a overview on how the components communicate I've created this simple diagram 
 ![](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/smart_outlet_hw_overview.jpg)
