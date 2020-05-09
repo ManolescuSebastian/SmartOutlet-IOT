@@ -36,6 +36,9 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 └── .gitignore
 ```
 
+#### start server command    
+sudo python3 run.py
+
 ### Hardware ###
 
 This is a DIY project so in order to create it you would need the following components.
