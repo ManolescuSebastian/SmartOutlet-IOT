@@ -1,5 +1,6 @@
-# SmartOutlet-IOT [![Kotlin](https://img.shields.io/badge/with-kotlin-brightgreen)](https://kotlinlang.org/) 
-
+# SmartOutlet-IOT     
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Kotlin](https://img.shields.io/badge/with-kotlin-brightgreen)](https://kotlinlang.org/)       
 
 Demo 
 ------
