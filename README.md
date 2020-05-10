@@ -1,6 +1,9 @@
 # SmartOutlet-IOT     
+[![Thingiverse](https://img.shields.io/badge/profile-Thingiverse-blue)](https://www.thingiverse.com/softwareinclude/about)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Kotlin](https://img.shields.io/badge/with-kotlin-brightgreen)](https://kotlinlang.org/)       
+[![Kotlin](https://img.shields.io/badge/with-kotlin-brightgreen)](https://kotlinlang.org/)
+
+
 
 Demo 
 ------
