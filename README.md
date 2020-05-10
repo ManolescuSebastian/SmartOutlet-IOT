@@ -4,9 +4,8 @@
 
 Demo 
 ------
-Video file.   
-     
-    
+Video file.  
+
     
 Mobile UI    
 ------
@@ -45,6 +44,20 @@ start server command
     
 Gateway (Raspberry pi)
 ------
+    
+<p align="center">
+   <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/GPIO-Pinout-Diagram-2.png" width="70%"></img>
+</p>
+
+Raspberry pi | H34A (TX)
+------------ | ---------
+VCC | VCC
+GND | GND
+DAT | DAT
+       
+    
+`ANT (Optional)` - useful for improved range    
+    
     
 Outlet Hardware
 ------
