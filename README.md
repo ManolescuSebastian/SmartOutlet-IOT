@@ -1,5 +1,4 @@
-# SmartOutlet-IOT
-
+# SmartOutlet-IOT [![Kotlin](https://img.shields.io/badge/with-kotlin-brightgreen)](https://kotlinlang.org/) 
 
 
 Demo 
@@ -56,7 +55,7 @@ GND | GND
 DAT | DAT
        
     
-`ANT (Optional)` - useful for improved range    
+`ANT (Optional)` - provides improved range    
     
     
 Outlet Hardware
