@@ -2,10 +2,10 @@
 
 ### Mobile UI ###     
 
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/mobile/SmartOutletIOT/app%20screenshots/hm_sc_1.jpg" width="24%"></img>
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/mobile/SmartOutletIOT/app%20screenshots/hm_sc_2.jpg" width="24%"></img>
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/mobile/SmartOutletIOT/app%20screenshots/hm_sc_4.jpg" width="24%"></img>
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/mobile/SmartOutletIOT/app%20screenshots/hm_sc_3.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_1.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_2.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_4.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_3.jpg" width="24%"></img>
     
 
 ### Project Structure ###
