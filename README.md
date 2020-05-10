@@ -40,8 +40,8 @@ In this project we used as FLASK (Flask is a lightweight WSGI web application fr
 └── .gitignore
 ```
 
-#### start server command    
-sudo python3 run.py
+start server command    
+`sudo python3 run.py`
     
 Gateway (Raspberry pi)
 ------
