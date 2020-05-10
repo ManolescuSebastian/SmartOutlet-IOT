@@ -8,8 +8,7 @@ from typing import List
 from flask_marshmallow import Marshmallow
 from flask_sqlalchemy import SQLAlchemy
 
-from Model import db, Device, DeviceSchema
-
+from models.device import db, Device, DeviceSchema
 
 devices_schema = DeviceSchema(many=True)
 device_schema = DeviceSchema()
@@ -72,11 +71,6 @@ class DeviceManager(Resource):
               db.session.query(Device).delete()
               db.session.commit()
               return {'message' : 'All devices deleted'}, 400
-
-           #delete device by id
-           #if not request.data:
-           #  abort(400, 'json required')
-           #data = request.get_json()
 
            device_id = request.args.get('id', default= None, type = str)
            if 'id' not in request.args:
