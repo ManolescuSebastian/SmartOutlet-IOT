@@ -12,15 +12,15 @@ This is a DIY project so in order to create it you would need the following comp
  The main idea behind this project is that we make the outlet hardware using really cheap components.
  
  In order to get a overview on how the components communicate I've created this simple diagram 
-![](https://github.com/ManolescuSebastian/SmartOutlet-IOT/tree/master/hardware/images/outlet%20images/smart_outlet_hw_overview.jpg)
+![](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/smart_outlet_hw_overview.jpg)
  
  Also I've made a simple and very graphic schematic that explains how the connections are made.
-![](https://github.com/ManolescuSebastian/SmartOutlet-IOT/tree/master/hardware/images/outlet%20images/smart_outlet_design.jpg)
+![](https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/smart_outlet_design.jpg)
  
  
  The final result after we've put all compoments together should look like this.
 
-<p align="center"><img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/tree/master/hardware/images/outlet%20images/outlet_result_01.jpg" width="600" height="500"></p>                                                                                                                                 
+<p align="center"><img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/outlet_result_01.jpg" width="600" height="500"></p>                                                                                                                                 
 <b>ATTINY85 outlet code</b></br>
 
 ```C
