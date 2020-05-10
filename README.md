@@ -11,13 +11,11 @@ Video file.
 Mobile UI    
 ------
 
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/mobile/SmartOutletIOT/app%20screenshots/hm_sc_1.jpg" width="24%"></img>
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/mobile/SmartOutletIOT/app%20screenshots/hm_sc_2.jpg" width="24%"></img>
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/mobile/SmartOutletIOT/app%20screenshots/hm_sc_4.jpg" width="24%"></img>
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/mobile/SmartOutletIOT/app%20screenshots/hm_sc_3.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_1.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_2.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_4.jpg" width="24%"></img>
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_3.jpg" width="24%"></img>
     
-     
- 
      
 API
 ------
@@ -60,8 +58,8 @@ This is a DIY project so in order to create it you would need the following comp
  The main idea behind this project is that we make the outlet hardware using really cheap components.
 
  Also I've made a simple and very graphic schematic that explains how the connections are made.     
-<img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/smart_outlet_hw_overview.jpg" width="40%"></img>
-<img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/smart_outlet_design.jpg" width="50%">
+<img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/smart_outlet_hw_overview.jpg" width="40%"></img>
+<img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/smart_outlet_design.jpg" width="50%">
 
 More details in the <b> hardware </b> module
 
