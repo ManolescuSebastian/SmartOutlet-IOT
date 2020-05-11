@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_swagger_ui import get_swaggerui_blueprint
 
 def create_app(config_filename):
      app = Flask(__name__)
@@ -6,6 +7,9 @@ def create_app(config_filename):
 
      from app import api_bp
      app.register_blueprint(api_bp, url_prefix='/api')
+
+     from app import swagger_bp, SWAGGER_URL
+     app.register_blueprint(swagger_bp, url_prefix = SWAGGER_URL)
 
      from models.device import db
      db.init_app(app)
