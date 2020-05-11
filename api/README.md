@@ -38,11 +38,14 @@ pip3 install rpi_rf
 ├── run.py
 └── .gitignore
 ```
-
 ### Endpoints
 
- **[GET] /api/control**    
- with parameters: **state = true** | **state = false**        
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/swagger_ui_endpoints_img.png" width="100%"></img>    
+
+### Endpoint details
+
+ `[GET] /api/control`   
+ with parameters: `state = true` | `state = false`       
  Request    
 ```json
 {
@@ -67,7 +70,7 @@ pip3 install rpi_rf
 }
 ```
 
- **[GET] /api/device**    
+ `[GET] /api/device`     
  Returns all available devices       
  Response.   
  ```json
@@ -96,9 +99,8 @@ pip3 install rpi_rf
 }
 ```
 
- **[POST] /api/device**     
- Add device     
- Request
+`[POST] /api/device`        
+ Add device request    
 ```json
 {
    "uuid" : 10008,
@@ -120,9 +122,8 @@ Response
 }
 ```
 
- **[PUT] /api/device**    
- Edit device   
- Request
+`[PUT] /api/device`      
+Edit device request
 ```json
 {
    "id" : 8, 
@@ -132,8 +133,8 @@ Response
 }
 ```
 
-**[DELETE] api/device?id=**   
-**[DELETE] api/device?delete=all**   
+`[DELETE] api/device?id=`   
+`[DELETE] api/device?delete=all`   
 Response
  ```json
 {
