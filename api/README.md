@@ -6,7 +6,9 @@ After everything was pieced together on the hardware side we need a node that re
 
 For that as I mentioned in the Hardware section [here](https://github.com/ManolescuSebastian/SmartOutlet-IOT/tree/master/HW) we need a Raspberry Pi, that will contain our API.
 
-In this project we used as FLASK (Flask is a lightweight WSGI web application framework), more info [here](https://palletsprojects.com/p/flask/)
+In this project we used Flask (lightweight WSGI web application framework), more info [here](https://palletsprojects.com/p/flask/), for endpoint integration.
+The data transfer with the devices is made using H34A(433MHz transmitter) and for that we used `rpi_rf` library [more details here](https://pypi.org/project/rpi-rf/) 
+
 
 ### Setup    
 Install required libraries and dependencies   
