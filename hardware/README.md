@@ -139,9 +139,18 @@ Gateway hardware
  For this purpose we used a <b>Raspberry Pi 3B+</b> (we can use any other raspberry Pi device versions)
  
  <p align="center">
-   <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/GPIO-Pinout-Diagram-2.png" width="70%"></img>
+   <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/rpi_H34A.jpg" width="85%"></img>
 </p>
 
+Raspberry pi - H34A wiring
 
+Raspberry pi | H34A (TX)
+------------ | ---------
+VCC | VCC
+GND | GND
+DAT | DAT
+       
+    
+`ANT (Optional)` - provides improved range    
 
  
