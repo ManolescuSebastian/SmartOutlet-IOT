@@ -55,7 +55,7 @@ Gateway (Raspberry pi)
 ------
     
 <p align="center">
-   <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/GPIO-Pinout-Diagram-2.png" width="70%"></img>
+   <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/rpi_H34A.jpg" width="80%"></img>
 </p>
 
 Raspberry pi | H34A (TX)
