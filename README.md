@@ -26,7 +26,7 @@ For the API implementation I've used Flask `(Flask is a lightweight WSGI web app
      
 ##### Available endpoints  
 
-<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/swagger_ui_endpoints_large.png" width="100%"></img>    
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/swagger_ui_endpoints_img.png" width="100%"></img>    
 
 ##### Project structure    
 
