@@ -22,9 +22,14 @@ Mobile UI
      
 API
 ------
-In this project we used as FLASK (Flask is a lightweight WSGI web application framework), more info [here](https://palletsprojects.com/p/flask/)
+For the API implementation I've used Flask `(Flask is a lightweight WSGI web application framework)` more info [here](https://palletsprojects.com/p/flask/)    
      
-##### Project structure
+##### Available endpoints  
+
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/swagger_ui_endpoints_large.png" width="100%"></img>    
+
+##### Project structure    
+
 
 ```bash
 ├── models
