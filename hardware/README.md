@@ -32,7 +32,8 @@ ___ATTINY85___ outlet main advantage is the small size and that it has the board
 
 <p align="center">
    <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/smart_outlet_design.jpg" width="50%"></img>
-   <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/outlet_result_01.jpg" width="30%"></img>
+   <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/3_01.jpg" width="15%"></img>
+      <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/5_01.jpg" width="15%"></img>
 </p>
 
 
@@ -84,7 +85,7 @@ ___Arduino Nano___ outlet was really easy to upload the code and the benifit it 
 <p align="center">
    <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/smart_outlet_design.jpg" width="50%"></img>
    <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/1.jpg" width="15%"></img>
-    <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/4.jpg" width="15%"></img>
+    <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/4_01.jpg" width="15%"></img>
 </p>
 
 
