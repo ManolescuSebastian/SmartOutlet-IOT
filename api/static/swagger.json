@@ -1,0 +1,283 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Smart home automation system POC",
+    "version": "1.0.0",
+    "title": "Swagger Smart Outlet IOT",
+    "contact": {
+      "email": "zeb@tekydevelop.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host": "0.0.0.0:5050",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "device",
+      "description": ""
+    },
+    {
+      "name": "control",
+      "description": ""
+    },
+    {
+      "name": "gateway",
+      "description": ""
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/device": {
+      "get": {
+        "tags": [
+          "device"
+        ],
+        "summary": "Get all devices",
+        "description": "",
+        "operationId": "allDevice",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "device"
+        ],
+        "summary": "Add new device",
+        "description": "",
+        "operationId": "addDevice",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Device"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid data"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "device"
+        ],
+        "summary": "Update an existing device",
+        "description": "",
+        "operationId": "updateDevice",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "Update gateway available devices",
+            "schema": {
+              "$ref": "#/definitions/Device"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid data supplied"
+          },
+          "404": {
+            "description": "Device not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "device"
+        ],
+        "summary": "Delete all gateway devices",
+        "description": "",
+        "operationId": "deleteDevice",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/device/{deviceId}": {
+      "delete": {
+        "tags": [
+          "device"
+        ],
+        "summary": "Delete device by id",
+        "description": "",
+        "operationId": "deleteSingleDevice",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "deviceId",
+            "in": "path",
+            "description": "Device id to delete",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Device not found"
+          }
+        }
+      }
+    },
+    "/control": {
+      "post": {
+        "tags": [
+          "control"
+        ],
+        "summary": "Control device",
+        "description": "Allow client to set device state",
+        "operationId": "controlDevice",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Created user object",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Control"
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/gateway": {
+      "get": {
+        "tags": [
+          "gateway"
+        ],
+        "summary": "Check gateway connection status",
+        "description": "",
+        "operationId": "statusGateway",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "default": {
+            "description": "successful operation"
+          }
+        }
+      }
+    },
+    "/gateway/{rfpin}": {
+      "post": {
+        "tags": [
+          "gateway"
+        ],
+        "summary": "Set gateway RF Module Pin",
+        "description": "",
+        "operationId": "controlGatewayRF",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "rfpin",
+            "in": "path",
+            "description": "RF Module id",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Device": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "uuid": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    },
+    "Control": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "uuid": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "integer",
+          "format": "int64"
+        }
+      }
+    }
+  }
+}
+
