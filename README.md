@@ -3,22 +3,21 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Kotlin](https://img.shields.io/badge/with-kotlin-brightgreen)](https://kotlinlang.org/)
 
-Home automation POC system that allows the user to control a device from any client connected to the wifi network.    
+Home automation POC (proof of concept) system that allows the user to control a device from any client connected to the wifi network.    
 The main parts of this project are the `outlet device` that receives the instructions, the `gateway` that handles the data between the client and the outlet device and the `client` that sends the requests.
 
 Demo 
 ------
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet_on_press.gif" width="80%"></img>
     
-Mobile UI    
+Android Mobile application     
 ------
 
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_1.jpg" width="24%"></img>
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_2.jpg" width="24%"></img>
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_4.jpg" width="24%"></img>
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/android%20app%20screenshots/hm_sc_3.jpg" width="24%"></img>
-    
-     
+
 API
 ------
 For the API implementation I've used Flask `(Flask is a lightweight WSGI web application framework)` more info [here](https://palletsprojects.com/p/flask/)    
