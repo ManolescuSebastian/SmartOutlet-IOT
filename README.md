@@ -8,8 +8,7 @@ The main parts of this project are the `outlet device` that receives the instruc
 
 Demo 
 ------
-Video file.  
-
+<img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet_on_press.gif" width="80%"></img>
     
 Mobile UI    
 ------
