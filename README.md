@@ -81,6 +81,16 @@ This is a DIY project so in order to create it you would need the following comp
 <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/smart_outlet_hw_overview.jpg" width="40%"></img>
 <img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/smart_outlet_design.jpg" width="50%">
 
+
+And this is how the devices look after the 3D printed lid and IOT / WIFI design was added
+
+<p align="center">
+<img align="center" src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet%20images/2.jpg" width="80%">
+</p>
+    
+3D STL files are available on my Thingiverse profile [here](https://www.thingiverse.com/softwareinclude/about)
+
+
 More details in the <b> hardware </b> module
 
 License
