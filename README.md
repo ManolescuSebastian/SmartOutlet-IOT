@@ -1,7 +1,6 @@
 # SmartOutlet-IOT     
 [![Thingiverse](https://img.shields.io/badge/profile-Thingiverse-blue)](https://www.thingiverse.com/softwareinclude/about)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Kotlin](https://img.shields.io/badge/with-kotlin-brightgreen)](https://kotlinlang.org/)
 
 Home automation POC (proof of concept) system that allows the user to control a device from any client connected to the wifi network.    
 The main parts of this project are the `outlet device` that receives the instructions, the `gateway` that handles the data between the client and the outlet device and the `client` that sends the requests.
