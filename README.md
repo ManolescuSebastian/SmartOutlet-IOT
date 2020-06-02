@@ -9,6 +9,9 @@ The main parts of this project are the `outlet device` that receives the instruc
 Demo 
 ------
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet_on_press.gif" width="80%"></img>
+
+ **Full Youtube video:**
+[SmartOutlet-IOT](https://www.youtube.com/watch?v=8GfmIdJ8pTU "SmartOutlet-IOT")      
     
 Android Mobile application     
 ------
