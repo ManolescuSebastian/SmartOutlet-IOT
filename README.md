@@ -7,7 +7,7 @@ The main parts of this project are the `outlet device` that receives the instruc
 
 FYI
 -----
-Each module (api / hardware /mobile) contains a different readme that has mode details related to that topic.
+Each module (api / hardware /mobile) contains a different README that has more details related to that topic.
 
 Demo 
 ------
