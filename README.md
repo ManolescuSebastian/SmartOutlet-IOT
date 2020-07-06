@@ -5,6 +5,10 @@
 Home automation POC (proof of concept) system that allows the user to control a device from any client connected to the wifi network.    
 The main parts of this project are the `outlet device` that receives the instructions, the `gateway` that handles the data between the client and the outlet device and the `client` that sends the requests.
 
+FYI
+-----
+Each module (api / hardware /mobile) contains a different readme that has mode details related to that topic.
+
 Demo 
 ------
 <img src="https://github.com/ManolescuSebastian/SmartOutlet-IOT/blob/master/hardware/images/outlet_on_press.gif" width="80%"></img>
