@@ -99,6 +99,12 @@ And this is how the devices look after the 3D printed lid and IOT / WIFI design 
 
 More details in the <b> hardware </b> module
 
+Todo:       
+-----
+
+- [ ] Add standalone module that will connect to extension cord
+- [ ] Add mobile app set gateway IP screen
+
 License
 ------
          
